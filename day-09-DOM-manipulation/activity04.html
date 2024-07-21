@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Activity 04
+        </title>
+    </head>
+
+    <body>
+        <img id="image">
+        <p id="text1">
+            Text without class (soon it will get a class by DOM manipulation).
+        </p>
+        <p id="text2" class="text2">
+            Text with class (soon the class will get removed by DOM manipulation).
+        </p>
+        <script>
+            document.getElementById("image").setAttribute("src", "https://imgproxy.learnyst.com/https://learnyst-user-assets.s3.ap-south-1.amazonaws.com/school-assets/schools/171024/schoolLogo/1717484431216banner_lyst1717484431227.png?w=0&h=0&resizetype=fit");
+            
+            // adding class
+            document.getElementById("text1").classList.add("text1");
+
+            // removing class
+            document.getElementById("text2").classList.remove("text2");
+        </script>
+    </body>
+</html>

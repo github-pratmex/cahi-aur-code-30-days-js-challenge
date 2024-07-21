@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity 01</title>
+  </head>
+  <body>
+    <p id = "para"></p>
+    <div class="text2">
+        <p>
+            Welcome to DOM manipulation.
+        </p>
+    </div>
+
+    <script>
+        document.getElementById("para").innerHTML = "Hello, Brother!";
+        const elments = document.getElementsByClassName("text2")
+        if(elments.length > 0) {
+            for(let i = 0; i < elments.length; i++) {
+                elments[i].style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+
+  </body>
+</html>

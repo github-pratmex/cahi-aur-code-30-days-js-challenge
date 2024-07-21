@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Activity 02
+        </title>
+    </head>
+    <body>
+
+        <ul id="myList">
+            <li>
+                Tea
+            </li>
+            <li>
+                Coffee
+            </li>
+            <li>
+                Milk
+            </li>
+        </ul>
+        <script>
+            const newDiv = document.createElement("div");
+            newDiv.textContent = "Hello, Brother!";
+            document.body.appendChild(newDiv);
+
+            const newLi = document.createElement("li");
+            newLi.textContent = "Cold Coffee";
+            document.getElementById("myList").appendChild(newLi);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Activity 05
+        </title>
+        <style>
+            #box{
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+                border: 10px solid greenyellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="targetParagraph">
+            This is the original text!
+        </p>
+        <button id="changeButton">
+            Change text
+        </button>
+
+        <div id="box">
+            <p>Hover to see effect</p>
+        </div>
+        <script>
+            const targetParagraph = document.getElementById("targetParagraph");
+            const changeButton = document.getElementById("changeButton");
+
+            changeButton.addEventListener("click", function() {
+                targetParagraph.textContent = "The text has been changed!";
+            });
+
+            const targetElement = document.getElementById("box");
+
+            // mouseover
+            targetElement.addEventListener("mouseover", function() {
+                targetElement.style.borderColor = "red";
+            });
+
+            // mouseout
+            targetElement.addEventListener("mouseout", function() {
+                targetElement.style.borderColor = "greenyellow";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Activity 03
+        </title>
+    </head>
+    <body>
+
+        <ul id="myList">
+            <li>
+                Tea
+            </li>
+            <li>
+                Coffee
+            </li>
+            <li>
+                Milk
+            </li>
+            <li id = "Cold">
+                Cold Coffee
+            </li>
+            <li>
+                Milk Shake
+            </li>
+        </ul>
+        <script>
+            const elementToRemove = document.getElementById("Cold");
+            elementToRemove.parentNode.removeChild(elementToRemove);
+
+            const parentElement = document.getElementById("myList");
+            parentElement.removeChild(parentElement.lastChild);
+        </script>
+    </body>
+</html>
